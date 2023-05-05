@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+
+body{
+	font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    background-color: lightpink;
+    color: black;
+    font-weight: bold;
+}
+.logo{
+    margin: 0 auto;
+    display: block;
+}
+h1{
+    text-align: center;
+    font-size: 4em;
+}
+table{
+  border-collapse: collapse;
+  margin: auto;
+}
+td,th{
+  border: 2.5px solid black;
+  padding: 10px;
+}
+.fa{
+    font-size: 5em;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.center{
+    text-align: center;
+}
+footer .fa{
+    font-size: 2em;
+}
+th{
+  background-color: pink;
+}
+.logom{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+nav{
+    background-color: lightblue;
+    border-top: 2px darkblue;
+    border-bottom: 2px darkblue;
+    padding: 5px;
+    font-size: 25px;
+}
+.home-image{
+    max-width: 60%;
+    max-height: 500px;
+    float: left;
+    margin: 20px;
+}
+.text-center{
+    text-align: center;
+}
+label{
+    float: left;
+    width: 8em;
+    padding-right: 1em;
+}
+input{
+    margin-bottom: 1em;
+    display: block;
+}
+textarea{
+    margin-bottom: 1em;
+    display: block;
+}
+input[type=submit]{
+    display: black;
+    background-color: lightgray;
+}
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+nav li{
+  display: inline;
+  padding-right: 10px;
+}
+nav a{
+  text-decoration: none;
+  padding-right: 10px;
+}
+nav a:link{
+    color: white;
+}
+nav a:visited{
+    color: white;
+}
+nav a:hover{
+    color: black;
+}
+nav a:active{
+    color: black;
+}
+main{
+    max-width: 1000px;
+    margin: 20px auto;
+}
+footer{
+    text-align: center;
+    border-top: 1px solid gray;
+    padding: 10px;
+    background-color: lightblue;
+    color: white;
+}
+footer a:link{
+color: white;
+}
+footer a:visited{
+color: white;
+}
+footer a:hover{
+color: black;
+}
+footer a:active{
+color: black;
+}
+*{
+    box-sizing: border-box;
+}
+a:link{
+color: white;
+}
+a:visited{
+color: white;
+}
+a:hover{
+color: lightblue;
+}
+a:active{
+color: lightblack;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.mobile{
+    display:none;
+}
+.gallery .preview{
+    width:100%;
+    height:auto;
+}
+
+.gallery .gallery-thumbnails img {
+    width:100px;
+    height:75px;
+    margin: 3px 10px 10px 0;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+}
+@media only screen and (max-width: 768px){
+    .desktop{
+        display:none;
+    }
+    .mobile{
+        display: block;
+        touch-action: manipulation;
+    }
+}
+
+/*CSS without a media query--applies to all sizes unless overridden*/
+h1{
+        font-size: 4em;
+ }
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+    h1{
+        font-size: 1.8em;
+}
+}
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 1.5em;
+    }
+}
